@@ -1,0 +1,392 @@
+{
+  "tenants": [
+    {
+      "tenantId": "tenant_001",
+      "tenantName": "Ageas",
+      "policies": [
+        {
+          "policyId": "policy_001",
+          "policyName": "Long-term Assignment Policy",
+          "policyType": "Long-term assignment",
+          "requiredDocumentIds": [
+            "doc_001",
+            "doc_002",
+            "doc_003",
+            "doc_004",
+            "doc_005"
+          ]
+        },
+        {
+          "policyId": "policy_005",
+          "policyName": "Short-term Assignment Policy",
+          "policyType": "Short-term assignment",
+          "requiredDocumentIds": [
+            "doc_007"
+          ]
+        },
+        {
+          "policyId": "policy_006",
+          "policyName": "Commuter Policy",
+          "policyType": "Commuter",
+          "requiredDocumentIds": [
+            "doc_008"
+          ]
+        },
+        {
+          "policyId": "policy_007",
+          "policyName": "Business Trip Policy",
+          "policyType": "Business trip",
+          "requiredDocumentIds": [
+            "doc_009"
+          ]
+        }
+      ],
+      "templates": [
+        {
+          "templateId": "template_001",
+          "templateName": "Assignment Letter",
+          "policyType": "Long-term assignment",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_001",
+              "versionNumber": "v1.0",
+              "content": "<h1>Assignment Letter</h1><p>Dear {{employee_name}},</p><p>This Assignment Letter confirms the terms and conditions of your international assignment with {{company_name}}. Please review the details below, which will apply for the duration of your assignment, and sign to indicate your acceptance.</p><h2>Assignment Details:</h2><ul><li>Position Title: {{position_title}}</li><li>Assignment Location: {{assignment_location}}</li><li>Start Date: {{start_date}}</li><li>End Date (Estimated): {{assignment_end_date}}</li><li>Reporting Manager: {{manager_name}}</li></ul><h2>Compensation and Benefits:</h2><p>You will continue to receive your base salary of {{base_salary}}. In addition, you will be provided with the following assignment benefits: {{benefits_list}}.</p><h2>Tax Arrangements:</h2><p>Your assignment will be administered under our expatriate tax policy. {{tax_terms}}</p><h2>Immigration and Work Authorization:</h2><p>The company will sponsor and facilitate your work authorization for {{assignment_location}}. {{immigration_details}}</p><h2>Compliance Requirements:</h2><p>You are expected to adhere to all applicable {{compliance_requirements}} during your assignment.</p><p>Sincerely,<br/>{{hr_representative}}</p>",
+              "createdAt": "2025-03-20T10:00:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version with comprehensive international assignment details",
+              "linkedDocuments": [
+                "doc_001"
+              ]
+            }
+          ],
+          "lastModified": "2025-03-20T10:00:00Z"
+        },
+        {
+          "templateId": "template_002",
+          "templateName": "Assignment Extension Agreement",
+          "policyType": "Long-term assignment",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_002",
+              "versionNumber": "v1.0",
+              "content": "<h1>Assignment Extension Agreement</h1><p>Dear {{employee_name}},</p><p>We refer to your international assignment in {{assignment_location}} that commenced on {{start_date}}. As discussed, {{company_name}} wishes to extend your assignment. This Assignment Extension Agreement outlines the updated terms.</p><h2>Extended Assignment Details:</h2><ul><li>Extended End Date: {{extended_end_date}}</li><li>Position Title: {{position_title}}</li><li>Assignment Location: {{assignment_location}}</li><li>Reporting Manager: {{manager_name}}</li></ul><h2>Compensation and Benefits:</h2><p>For the extension period, your base salary will remain at {{base_salary}}, and you will continue to receive assignment benefits: {{benefits_list}}.</p><h2>Other Terms:</h2><p>All other terms, including tax equalization ({{tax_terms}}), compliance ({{compliance_requirements}}), and immigration support ({{immigration_details}}) continue to apply.</p><p>Sincerely,<br/>{{hr_representative}}</p>",
+              "createdAt": "2025-03-20T10:30:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version with updated extension details",
+              "linkedDocuments": [
+                "doc_002"
+              ]
+            }
+          ],
+          "lastModified": "2025-03-20T10:30:00Z"
+        },
+        {
+          "templateId": "template_003",
+          "templateName": "Repatriation Agreement",
+          "policyType": "Long-term assignment",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_003",
+              "versionNumber": "v1.0",
+              "content": "<h1>Repatriation Agreement</h1><p>Dear {{employee_name}},</p><p>As your assignment in {{assignment_location}} comes to a close, this Repatriation Agreement outlines your return to your home location.</p><h2>Repatriation Details:</h2><ul><li>Assignment End Date: {{assignment_end_date}}</li><li>Effective Date: {{effective_date}}</li><li>Home Location: {{home_location}}</li><li>Position Title upon Return: {{position_title}}</li><li>Reporting Manager: {{manager_name}}</li></ul><h2>Repatriation Assistance:</h2><p>You are eligible for repatriation benefits: {{benefits_list}}.</p><h2>Tax and Compliance:</h2><p>Your participation in tax equalization ({{tax_terms}}) and compliance requirements ({{compliance_requirements}}) will conclude upon repatriation.</p><h2>Immigration:</h2><p>We will coordinate the closure of your work authorization. {{immigration_details}}</p><p>Sincerely,<br/>{{hr_representative}}</p>",
+              "createdAt": "2025-03-20T11:00:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version with repatriation details",
+              "linkedDocuments": [
+                "doc_003"
+              ]
+            }
+          ],
+          "lastModified": "2025-03-20T11:00:00Z"
+        },
+        {
+          "templateId": "template_004",
+          "templateName": "Tax Equalization Agreement",
+          "policyType": "Long-term assignment",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_004",
+              "versionNumber": "v1.0",
+              "content": "<h1>Tax Equalization Agreement</h1><p><strong>Employee:</strong> {{employee_name}}<br/><strong>Home Country:</strong> {{home_country}}<br/><strong>Host Country (Assignment Location):</strong> {{assignment_location}}<br/><strong>Assignment Start Date:</strong> {{start_date}}<br/><strong>Assignment End Date:</strong> {{assignment_end_date}}<br/><strong>Effective Date of Agreement:</strong> {{effective_date}}</p><h2>1. Purpose</h2><p>This agreement ensures you incur no financial gain or loss due to tax differences.</p><h2>2. Company Responsibilities:</h2><p>{{company_name}} will manage host country tax payments and provide tax preparation services.</p><h2>3. Employee Responsibilities:</h2><p>You agree to the hypothetical tax deductions as outlined: {{tax_terms}}. Also, comply with {{compliance_requirements}}.</p><p>By signing, you acknowledge your understanding of these terms.</p><p>{{hr_representative}}</p>",
+              "createdAt": "2025-03-20T11:30:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version detailing tax equalization terms",
+              "linkedDocuments": [
+                "doc_004"
+              ]
+            }
+          ],
+          "lastModified": "2025-03-20T11:30:00Z"
+        },
+        {
+          "templateId": "template_005",
+          "templateName": "Immigration Support Letter",
+          "policyType": "Long-term assignment",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_005",
+              "versionNumber": "v1.0",
+              "content": "<h1>Immigration Support Letter</h1><p>To Whom It May Concern,</p><p><strong>Subject:</strong> Work Assignment Confirmation – {{employee_name}} (Passport No: {{passport_number}})</p><p>This letter supports the work permit/visa application for {{employee_name}}. {{employee_name}} holds the position of {{position_title}} with {{company_name}} and is assigned to {{assignment_location}} starting on {{start_date}}, with an expected assignment duration of {{assignment_duration}}, ending on {{assignment_end_date}}.</p><p>Upon assignment, {{employee_name}} will report to {{manager_name}} and receive a base salary of {{base_salary}}. The host entity, {{host_company_name}}, will facilitate local operations.</p><p>For immigration support, please note the following: {{immigration_details}}. The required visa type is {{visa_type}}.</p><p>For further details, please contact {{hr_representative}}.</p><p>Sincerely,<br/>{{hr_representative}}</p>",
+              "createdAt": "2025-03-20T12:00:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version for immigration support",
+              "linkedDocuments": [
+                "doc_005"
+              ]
+            }
+          ],
+          "lastModified": "2025-03-20T12:00:00Z"
+        },
+        {
+          "templateId": "template_007",
+          "templateName": "Short-term Assignment Agreement",
+          "policyType": "Short-term assignment",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_007",
+              "versionNumber": "v1.0",
+              "content": "<h1>Short-term Assignment Agreement</h1><p>Dear {{employee_name}},</p><p>This Short-term Assignment Agreement confirms the terms of your temporary assignment with {{company_name}}. Please review the details below and sign to acknowledge your acceptance.</p><h2>Assignment Details:</h2><ul><li>Position Title: {{position_title}}</li><li>Assignment Location: {{assignment_location}}</li><li>Start Date: {{start_date}}</li><li>End Date: {{assignment_end_date}}</li><li>Reporting Manager: {{manager_name}}</li></ul><h2>Compensation and Benefits:</h2><p>You will receive a base salary of {{base_salary}} and the following benefits for this short-term assignment: {{benefits_list}}.</p><h2>Additional Terms:</h2><p>This assignment is subject to specific tax terms ({{tax_terms}}), compliance requirements ({{compliance_requirements}}), and immigration support ({{immigration_details}}).</p><p>Sincerely,<br/>{{hr_representative}}</p>",
+              "createdAt": "2025-04-01T09:00:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version for short-term assignment",
+              "linkedDocuments": [
+                "doc_007"
+              ]
+            }
+          ],
+          "lastModified": "2025-04-01T09:00:00Z"
+        },
+        {
+          "templateId": "template_008",
+          "templateName": "Commuter Agreement",
+          "policyType": "Commuter",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_008",
+              "versionNumber": "v1.0",
+              "content": "<h1>Commuter Agreement</h1><p>Dear {{employee_name}},</p><p>This Commuter Agreement outlines the terms for your daily commute to work at {{assignment_location}}. Your work schedule is as follows:</p><h2>Work Schedule:</h2><p>{{work_schedule}}</p><h2>Reimbursements:</h2><p>You are eligible for a commuting reimbursement of {{commute_reimbursement}}. Please adhere to the guidelines provided by {{company_name}}.</p><p>For any queries, please contact your reporting manager, {{manager_name}}, or {{hr_representative}}.</p><p>Sincerely,<br/>{{hr_representative}}</p>",
+              "createdAt": "2025-04-01T09:30:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version for commuter agreement",
+              "linkedDocuments": [
+                "doc_008"
+              ]
+            }
+          ],
+          "lastModified": "2025-04-01T09:30:00Z"
+        },
+        {
+          "templateId": "template_009",
+          "templateName": "Business Trip Agreement",
+          "policyType": "Business trip",
+          "currentVersion": "v1.0",
+          "versions": [
+            {
+              "versionId": "version_009",
+              "versionNumber": "v1.0",
+              "content": "<h1>Business Trip Agreement</h1><p>Dear {{employee_name}},</p><p>This Business Trip Agreement confirms your upcoming business trip to {{assignment_location}}. The trip is scheduled from {{start_date}} to {{assignment_end_date}}.</p><h2>Details:</h2><ul><li>Position Title: {{position_title}}</li><li>Per Diem: {{per_diem}}</li><li>Reporting Manager: {{manager_name}}</li></ul><h2>Travel and Expense:</h2><p>Your travel arrangements have been coordinated by {{company_name}}, and you are eligible for a per diem allowance of {{per_diem}} during the trip.</p><p>Please contact {{hr_representative}} for any further information or adjustments.</p><p>Sincerely,<br/>{{hr_representative}}</p>",
+              "createdAt": "2025-04-01T10:00:00Z",
+              "changeType": "major",
+              "changeDescription": "Initial version for business trip agreement",
+              "linkedDocuments": [
+                "doc_009"
+              ]
+            }
+          ],
+          "lastModified": "2025-04-01T10:00:00Z"
+        }
+      ],
+      "cases": [
+        {
+          "caseId": "case_001",
+          "employeeId": "emp_001",
+          "caseName": "Sarah Browne STA",
+          "documents": [
+            {
+              "documentId": "doc_001",
+              "documentName": "Assignment Letter - Sarah Browne",
+              "documentType": "Assignment Letter",
+              "documentVersion": "v1.0",
+              "documentContent": "",
+              "templateId": "template_001",
+              "documentCreatedOn": "2025-03-10T10:00:00Z",
+              "documentStatus": "Approved"
+            },
+            {
+              "documentId": "doc_004",
+              "documentName": "Tax Equalization Agreement - Sarah Browne",
+              "documentType": "Tax Equalization Agreement",
+              "documentVersion": "v1.0",
+              "documentContent": "",
+              "templateId": "template_004",
+              "documentCreatedOn": "2025-03-12T11:30:00Z",
+              "documentStatus": "Pending Approval"
+            },
+            {
+              "documentId": "doc_005",
+              "documentName": "Immigration Support Letter - Sarah Browne",
+              "documentType": "Immigration Support Letter",
+              "documentVersion": "v1.0",
+              "documentContent": "",
+              "templateId": "template_005",
+              "documentCreatedOn": "2025-03-14T12:00:00Z",
+              "documentStatus": "Draft"
+            }
+          ],
+          "caseData": {
+            "employee_name": "Sarah Browne",
+            "assignment_location": "Sydney, Australia",
+            "start_date": "2025-05-01",
+            "assignment_end_date": "2026-04-30",
+            "manager_name": "Emily Carter",
+            "position_title": "Project Manager",
+            "base_salary": "EUR 100,000",
+            "effective_date": "2025-06-01",
+            "home_country": "France",
+            "passport_number": "X12345678",
+            "assignment_duration": "12 months",
+            "host_company_name": "Ageas",
+            "visa_type": "Work Visa",
+            "company_name": "Ageas",
+            "benefits_list": "Housing allowance, relocation support, and annual bonus",
+            "tax_terms": "Standard expatriate tax equalization applies.",
+            "immigration_details": "Visa sponsorship and work permit processing provided.",
+            "compliance_requirements": "local labour laws and company policies.",
+            "hr_representative": "Laura Stevens"
+          }
+        }
+      ],
+      "variables": [
+        {
+          "variableId": "var_001",
+          "variableName": "employee_name",
+          "variableLabel": "Employee Name"
+        },
+        {
+          "variableId": "var_002",
+          "variableName": "assignment_location",
+          "variableLabel": "Assignment Location"
+        },
+        {
+          "variableId": "var_003",
+          "variableName": "start_date",
+          "variableLabel": "Start Date"
+        },
+        {
+          "variableId": "var_004",
+          "variableName": "manager_name",
+          "variableLabel": "Manager Name"
+        },
+        {
+          "variableId": "var_005",
+          "variableName": "position_title",
+          "variableLabel": "Position Title"
+        },
+        {
+          "variableId": "var_006",
+          "variableName": "base_salary",
+          "variableLabel": "Base Salary"
+        },
+        {
+          "variableId": "var_007",
+          "variableName": "effective_date",
+          "variableLabel": "Effective Date"
+        },
+        {
+          "variableId": "var_010",
+          "variableName": "assignment_end_date",
+          "variableLabel": "Assignment End Date"
+        },
+        {
+          "variableId": "var_011",
+          "variableName": "extended_end_date",
+          "variableLabel": "Extended End Date"
+        },
+        {
+          "variableId": "var_012",
+          "variableName": "home_location",
+          "variableLabel": "Home Location"
+        },
+        {
+          "variableId": "var_013",
+          "variableName": "home_country",
+          "variableLabel": "Home Country"
+        },
+        {
+          "variableId": "var_014",
+          "variableName": "assignment_duration",
+          "variableLabel": "Assignment Duration"
+        },
+        {
+          "variableId": "var_015",
+          "variableName": "host_company_name",
+          "variableLabel": "Host Company Name"
+        },
+        {
+          "variableId": "var_016",
+          "variableName": "passport_number",
+          "variableLabel": "Passport Number"
+        },
+        {
+          "variableId": "var_017",
+          "variableName": "visa_type",
+          "variableLabel": "Visa Type"
+        },
+        {
+          "variableId": "var_018",
+          "variableName": "commute_reimbursement",
+          "variableLabel": "Commute Reimbursement"
+        },
+        {
+          "variableId": "var_019",
+          "variableName": "per_diem",
+          "variableLabel": "Per Diem"
+        }
+      ]
+    }
+  ],
+  "systemVariables": [
+    {
+      "variableId": "sys_var_001",
+      "variableName": "company_name",
+      "variableLabel": "Company Name"
+    },
+    {
+      "variableId": "sys_var_002",
+      "variableName": "hr_representative",
+      "variableLabel": "HR Representative"
+    },
+    {
+      "variableId": "sys_var_003",
+      "variableName": "benefits_list",
+      "variableLabel": "Benefits List"
+    },
+    {
+      "variableId": "sys_var_004",
+      "variableName": "tax_terms",
+      "variableLabel": "Tax Terms"
+    },
+    {
+      "variableId": "sys_var_005",
+      "variableName": "equipment_list",
+      "variableLabel": "Equipment List"
+    },
+    {
+      "variableId": "sys_var_006",
+      "variableName": "immigration_details",
+      "variableLabel": "Immigration Details"
+    },
+    {
+      "variableId": "sys_var_007",
+      "variableName": "compliance_requirements",
+      "variableLabel": "Compliance Requirements"
+    }
+  ]
+}

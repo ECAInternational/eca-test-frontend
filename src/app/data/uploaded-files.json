@@ -1,0 +1,36 @@
+{
+  "tenants": {
+    "tenant_001": {
+      "case_001": [
+        {
+          "fileId": "f989e56a-507c-4a58-9a5d-bbf4ba1da7c2",
+          "fileName": "passport_sarah-browne.png",
+          "fileType": "PNG",
+          "documentName": "Passport",
+          "documentType": "Passport",
+          "description": "Passport - Sarah Browne",
+          "uploadedOn": "2025-03-20T12:36:32.458Z",
+          "caseId": "case_001",
+          "tenantId": "tenant_001",
+          "fileSize": 4583081,
+          "contentType": "image/png"
+        }
+      ],
+      "case_003": [
+        {
+          "fileId": "6f16216d-9a88-461d-bbb6-db007f855d4f",
+          "fileName": "Assignment Letter - John Smith (44).pdf",
+          "fileType": "PDF",
+          "documentName": "test",
+          "documentType": "Visa",
+          "description": "desc",
+          "uploadedOn": "2025-03-16T17:22:39.119Z",
+          "caseId": "case_003",
+          "tenantId": "tenant_001",
+          "fileSize": 27633,
+          "contentType": "application/pdf"
+        }
+      ]
+    }
+  }
+}

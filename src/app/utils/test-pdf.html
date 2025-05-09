@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+    }
+    .content {
+      margin-top: 20px;
+    }
+    @media print {
+      .logo {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://raw.githubusercontent.com/codeium/codeium/main/codeium.png" class="logo" alt="Test Logo" crossorigin="anonymous"/>
+    <h1>Test Document</h1>
+  </div>
+  <div class="content">
+    <h2>Sample Content</h2>
+    <p>This is a test document to verify PDF generation with images and proper styling.</p>
+    <ul>
+      <li>Testing image loading and quality</li>
+      <li>Verifying margins and layout</li>
+      <li>Checking font rendering</li>
+    </ul>
+  </div>
+</body>
+</html>
